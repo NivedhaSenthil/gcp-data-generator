@@ -13,6 +13,14 @@ enabled and disabled.
 
 Prerequisites ruby and thrift.
 
+### Generate data into file
+
+- clone the repo
+- `bundle install`
+- `bundle exec ruby ./message_generator.rb "test.txt" "realistic" "semi_repeated" "2000"`
+
+### Publish data to pubsub
+
 - clone the repo
 - `bundle install`
 - `bundle exec ruby ./runner.rb "test" "realistic" "semi_repeated" "2000"`

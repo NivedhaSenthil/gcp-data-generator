@@ -17,7 +17,7 @@ def publish_with_compression_sync  pubsub, topic_id, data
 end
 
 def publish_without_compression_sync  pubsub, topic_id, data
-    topic = pubsub.topic topic_id, async: {compress: true}
+    topic = pubsub.topic topic_id
     topic.publish data
 end
 
